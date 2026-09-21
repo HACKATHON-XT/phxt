@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusHub — Comunidad & Cursos</title>
+  <link rel="stylesheet" href="stt.css" />
+</head>
+<body>
 
+  <!-- ================= TOPBAR ================= -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="logo">🎓 Campus<span>Hub</span></div>
+    </div>
+
+    <nav class="tabs" id="main-tabs" aria-label="Navegación principal">
+      <button class="tab active" data-view="community">💬 Comunidad</button>
+      <button class="tab" data-view="courses">📚 Cursos</button>
+    </nav>
+
+    <div class="topbar-right">
+      <button id="user-chip" class="user-chip tone-gray" title="Ver perfil">··</button>
+    </div>
+  </header>
+
+  <!-- ================= VISTAS (SPA) ================= -->
+  <main id="app">
+    <section id="view-login" class="view"></section>
+    <section id="view-community" class="view active"></section>
+    <section id="view-courses" class="view"></section>
+    <section id="view-course" class="view"></section>
+    <section id="view-profile" class="view"></section>
+    <section id="view-calendar" class="view"></section>
+    <section id="view-settings" class="view"></section>
+  </main>
+
+  <!-- ================= DRAWER (MENÚ LATERAL 3 BARRITAS) ================= -->
+  <div id="backdrop" class="backdrop"></div>
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div id="drawer-content"></div>
+  </aside>
+
+  <!-- ================= TOAST ================= -->
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="c.js"></script>
+</body>
+</html>
